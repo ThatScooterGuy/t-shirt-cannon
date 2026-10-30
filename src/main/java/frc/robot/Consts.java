@@ -9,4 +9,7 @@ public class Consts {
 
     public static final int PrimaryControllerPort = 0;
     public static final int SecondaryControllerPort = 1;
+
+    public static final double DeadBand = 0.051;
+    public static final double ChangeThreshhold = 0.05;
 }

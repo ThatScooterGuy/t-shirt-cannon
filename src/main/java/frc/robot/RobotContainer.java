@@ -23,7 +23,7 @@ public class RobotContainer {
   }
 
   public Command getAutonomousCommand() {
-    return drivetrain.tankDrive(0, 0);
+    return drivetrain.tankDrive(1, -1);
   }
 
   public Command getAutonomousEndCommand() {

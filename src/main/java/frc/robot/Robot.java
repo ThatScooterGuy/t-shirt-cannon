@@ -68,7 +68,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void autonomousInit() {
-    //scheduleNewCommands(robotContainer.getAutonomousCommand());
+    scheduleNewCommands(robotContainer.getAutonomousCommand());
   }
 
   @Override

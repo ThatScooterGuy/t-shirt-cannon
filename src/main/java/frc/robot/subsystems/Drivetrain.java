@@ -24,7 +24,15 @@ public class Drivetrain extends SubsystemBase {
     }
 
     public void setSides(double left, double right) {
-        for (int i = 0; i < motors.length; i += 1) if (i >= motors.length/2) motors[i].set(left); else motors[i].set(right);
+        setLeft(left);
+        setRight(right);
+    }
+    
+    public void setLeft(double speed) {
+        for (int i = 0; i < motors.length / 2; i += 1) motors[i].set(speed);
+    }
+    public void setRight(double speed) {
+        for (int i = motors.length / 2; i < motors.length; i += 1) motors[i].set(speed);
     }
 
     public Command tankDrive(double left, double right) {
